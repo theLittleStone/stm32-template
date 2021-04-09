@@ -192,7 +192,7 @@ void delay_ms(u16 nms)
 void delay_us(u32 nus)
 {		
 	u32 temp;
-	if (temp <= 0) return;
+	if (temp <= 0) return;						//校验参数
 	SysTick->LOAD=nus*fac_us; 					//时间加载	  		 
 	SysTick->VAL=0x00;        					//清空计数器
 	SysTick->CTRL|=SysTick_CTRL_ENABLE_Msk ;	//开始倒数	  
@@ -212,7 +212,7 @@ void delay_us(u32 nus)
 void delay_ms(u16 nms)
 {	 		  	  
 	u32 temp;
-	if (temp <= 0) return;
+	if (temp <= 0) return;						//校验参数
 	SysTick->LOAD=(u32)nms*fac_ms;				//时间加载(SysTick->LOAD为24bit)
 	SysTick->VAL =0x00;							//清空计数器
 	SysTick->CTRL|=SysTick_CTRL_ENABLE_Msk ;	//开始倒数  
