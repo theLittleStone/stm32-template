@@ -551,6 +551,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\delay\delay.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f10x_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Libraries\CMSIS\stm32f10x_conf.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
