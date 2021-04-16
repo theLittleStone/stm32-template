@@ -556,6 +556,16 @@
               <FileType>5</FileType>
               <FilePath>..\Libraries\CMSIS\stm32f10x_conf.h</FilePath>
             </File>
+            <File>
+              <FileName>userStartUp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\userStartUp.c</FilePath>
+            </File>
+            <File>
+              <FileName>userStartUp.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\userStartUp.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
